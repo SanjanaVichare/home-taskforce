@@ -2,14 +2,14 @@ import { useState } from "react";
 import { Sparkles, ChevronDown, Award } from "lucide-react";
 
 // Import logos
-import dream11 from "@/assets/logos/dream11.png";
-import icici from "@/assets/logos/icici.png";
-import uti from "@/assets/logos/uti.png";
-import tvs from "@/assets/logos/tvs.png";
-import ck from "@/assets/logos/ck.png";
-import th from "@/assets/logos/th.png";
-import superfit from "@/assets/logos/superfit.png";
-import frw from "@/assets/logos/frw.png";
+import dream11 from "@/assets/logos/d11.jpeg";
+import icici from "@/assets/logos/icici.jpeg";
+import uti from "@/assets/logos/uti.jpeg";
+import tvs from "@/assets/logos/tvs.jpeg";
+import ck from "@/assets/logos/ck.jpeg";
+import th from "@/assets/logos/th.jpeg";
+import superfit from "@/assets/logos/superfit.jpeg";
+import frw from "@/assets/logos/frw.jpeg";
 
 // Main clients with images
 const clients = [
