@@ -135,13 +135,10 @@ Message: ${formData.message}`;
                   <MapPin className="h-6 w-6 text-emerald-600" />
                 </div>
                 <div>
-<<<<<<< HEAD
+
                   <h3 className="text-lg font-semibold text-foreground mb-2">Our Office</h3>
                   <p className="text-muted-foreground">
-=======
-                  <h3 className="text-lg font-semibold text-slate-900 mb-2">Our Office</h3>
-                  <p className="text-slate-600">
->>>>>>> 74e98a4 (Fix routing, admin auth, and backend integration)
+
                     Room No 11, Jay Ambe Mata No 6,<br />
                     Nehru Nagar, V.M. Road,<br />
                     Vileparle West, Mumbai
