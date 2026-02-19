@@ -1,14 +1,9 @@
-node_modules
-dist
-
 backend/.venv
 backend/venv
 backend/__pycache__
 # dependencies
 node_modules/
 
-# production build
-dist/
 backend/database.db
 
 .env
