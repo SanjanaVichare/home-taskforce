@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-base md:text-lg text-primary-foreground/70 mb-8 max-w-2xl animate-fade-in-up animation-delay-300">
-            Premium quality cleaning services using eco-friendly chemicals and modern machinery. 
+            Premium quality cleaning services using eco-friendly chemicals and modern machinery.
             Trusted by Dream11, ICICI Lombard, Tommy Hilfiger, and celebrity clients.
           </p>
 

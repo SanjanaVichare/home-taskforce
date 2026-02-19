@@ -4,8 +4,8 @@ const About = () => {
   const features = [
     {
       icon: Leaf,
-      title: "Eco-Friendly",
-      description: "We use only eco-friendly chemicals for a safe environment",
+      title: "Trained Staff",
+      description: "Our team is professionally trained to deliver exceptional cleaning results with attention to detail.",
       gradient: "from-green-500 to-emerald-600",
       bgColor: "bg-green-50",
     },

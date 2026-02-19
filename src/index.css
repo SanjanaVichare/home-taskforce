@@ -109,6 +109,23 @@
   }
 }
 
+@keyframes marqueeLoop {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  width: max-content;
+  display: flex;
+  animation: marqueeLoop 30s linear infinite;
+}
+
+
 @layer components {
   .section-container {
     @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;

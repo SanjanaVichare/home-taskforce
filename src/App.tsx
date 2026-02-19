@@ -7,6 +7,11 @@ import Index from "./pages/Index";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
+import Compliance from "./pages/Compliance";
+import ComplianceServices from "./pages/ComplianceServices";
+import ComplianceClients from "./pages/ComplianceClients";
+import ComplianceContact from "./pages/ComplianceContact";
+
 
 function App() {
   return (
@@ -17,7 +22,10 @@ function App() {
         <Route path="/" element={<HeroLanding />} />
 
         {/* Main Website */}
-        <Route path="/home" element={<Index />} />
+        <Route path="/home" element={<Compliance />} />
+        <Route path="/compliance-services" element={<ComplianceServices />} />
+        <Route path="/compliance-clients" element={<ComplianceClients />} />
+        <Route path="/compliance-contact" element={<ComplianceContact />} />
 
         {/* Admin */}
         <Route path="/admin" element={<AdminLogin />} />

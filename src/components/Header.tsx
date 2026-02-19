@@ -9,12 +9,12 @@ const Header = () => {
   const navigate = useNavigate();
 
   const navItems = [
-    { name: "Home", href: "/home#home" },
-    { name: "About", href: "/home#about" },
-    { name: "Services", href: "/home#services" },
-    { name: "Why Us", href: "/home#why-us" },
-    { name: "Clients", href: "/home#clients" },
-    { name: "Contact", href: "/home#contact" },
+    { name: "Home", href: "/non-compliance#home" },
+    { name: "About", href: "/non-compliance#about" },
+    { name: "Services", href: "/non-compliance#services" },
+    { name: "Clients", href: "/non-compliance#clients" },
+    { name: "Reviews", href: "/non-compliance#reviews" },
+    { name: "Contact", href: "/non-compliance#contact" },
   ];
 
   // 🔐 Secret Admin Access
@@ -46,7 +46,7 @@ const Header = () => {
             </div>
 
             <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-              Home Task Facility Management
+              Home Task Force
             </span>
           </div>
 

@@ -106,7 +106,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Home Task Facility Management. All rights reserved.
           </p>
           <p className="text-sm text-primary-foreground/60">
-            GST: 27AAICH3551J1ZE | MSME Certified
+            GST: 27LWPPS8898Q1ZF | MSME Certified
           </p>
         </div>
       </div>

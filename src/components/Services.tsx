@@ -166,8 +166,9 @@ const Services = () => {
         {/* Services Grid */}
         <div
           id="services"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-12"
         >
+
           {services.map((service, index) => (
             <ServiceCard key={service.title} {...service} index={index} />
           ))}
@@ -179,50 +180,64 @@ const Services = () => {
 
 /* SERVICE CARD */
 const ServiceCard = ({ img, title, description, icon: Icon, gradient, index }) => {
+
+  // WhatsApp Redirect
+  const handleClick = () => {
+    const phoneNumber = "919702720588";
+
+    const message = `Hi, I am interested in your ${title} service. Please share more details.`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <div
-      className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white cursor-pointer hover:-translate-y-2 border border-slate-200 hover:border-emerald-300"
+      onClick={handleClick}
+      className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white cursor-pointer border border-slate-200 hover:border-emerald-300"
       style={{
-        animation: 'fadeInUp 0.6s ease-out backwards',
-        animationDelay: `${index * 0.05}s`
+        animation: "fadeInUp 0.6s ease-out backwards",
+        animationDelay: `${index * 0.05}s`,
       }}
     >
       {/* Image */}
-      <div className="relative h-52 overflow-hidden">
+      <div className="relative h-28 sm:h-32 md:h-40 overflow-hidden">
         <img
           src={img}
           alt={title}
-          className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
         />
-        {/* Gradient overlay */}
-        <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent`}></div>
+
+        {/* Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
       </div>
 
-      {/* Content overlay */}
-      <div className="absolute inset-0 flex flex-col justify-end p-6">
-        {/* Icon with gradient background */}
-        <div className="mb-3">
-          <div className={`inline-flex w-12 h-12 rounded-xl bg-gradient-to-br ${gradient} items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-            <Icon className="w-6 h-6 text-white" strokeWidth={2.5} />
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4">
+
+        {/* Icon */}
+        <div className="mb-1 sm:mb-2">
+          <div
+            className={`inline-flex w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br ${gradient} items-center justify-center shadow-md`}
+          >
+            <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
           </div>
         </div>
 
-        <h3 className="text-white text-xl font-bold mb-2 group-hover:text-emerald-300 transition-colors">
+        {/* Title */}
+        <h3 className="text-white text-sm sm:text-base font-bold leading-tight mb-1">
           {title}
         </h3>
 
-        <p className="text-white/90 text-sm mb-4 leading-relaxed">
-          {description}
-        </p>
-
-        {/*<button className="group/btn inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full w-fit transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105">
-          Book Now
-          <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-        </button>*/}
       </div>
 
-      {/* Bottom accent line */}
-      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}></div>
+      {/* Bottom Line */}
+      <div
+        className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r ${gradient} scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}
+      ></div>
     </div>
   );
 };

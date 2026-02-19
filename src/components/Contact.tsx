@@ -128,28 +128,33 @@ Message: ${formData.message}`;
                 </div>
               </div>
             </div>
-
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0">
                   <MapPin className="h-6 w-6 text-emerald-600" />
                 </div>
                 <div>
-
                   <h3 className="text-lg font-semibold text-foreground mb-2">Our Office</h3>
                   <p className="text-muted-foreground">
-
                     Room No 11, Jay Ambe Mata No 6,<br />
                     Nehru Nagar, V.M. Road,<br />
-                    Vileparle West, Mumbai
+                    Vileparle West, Mumbai - 400056
                   </p>
+                  <a
+                    href="https://maps.google.com/?q=Vileparle+West+Mumbai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 text-sm text-emerald-600 hover:text-emerald-700 hover:underline transition"
+                  >
+                    Get directions →
+                  </a>
                 </div>
               </div>
             </div>
 
             <div className="p-6 rounded-2xl bg-emerald-500 text-white shadow-md">
               <h3 className="text-lg font-semibold mb-2">GST Registered</h3>
-              <p className="opacity-90">GST NO: 27AAICH3551J1ZE</p>
+              <p className="opacity-90">GST NO: 27LWPPS8898Q1ZF</p>
             </div>
           </div>
 
