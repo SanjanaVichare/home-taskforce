@@ -5,5 +5,5 @@ backend/__pycache__
 node_modules/
 
 backend/database.db
-
+.vercel
 .env
